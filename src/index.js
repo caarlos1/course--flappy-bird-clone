@@ -6,8 +6,7 @@ import ScoreScene from "./scenes/ScoreScene";
 import PauseScene from "./scenes/PauseScene";
 
 const WIDTH = window.innerWidth <= 400 ? window.innerWidth - 30 : 350;
-console.log(WIDTH);
-const HEIGHT = 600;
+const HEIGHT = window.innerHeight <= 600 ? window.innerHeight - 30 : 600;
 const PIPES_TO_RENDER = 4;
 const BIRD_POSITION = {
     x: WIDTH * 0.1,
