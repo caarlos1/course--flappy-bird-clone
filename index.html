@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <style>
-    </style>
-  </head>
-  <body>
-  </body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flappy Bird Clone - Study by Carlos Roberto</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url("./assets/sky.png");
+                background-size: cover;
+                flex-direction: column;
+                font-family: "Roboto", sans-serif;
+            }
+
+            canvas {
+                box-shadow: 0px 0px 13px 5px rgba(11, 6, 69, 0.39);
+                border-radius: 20px;
+            }
+
+            .footer {
+                padding: 30px 15px 15px 15px;
+                width: 100%;
+                max-width: 350px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="game-app"></div>
+        <div class="footer">
+            Game developed following the Phaser 3 course, to learn more about
+            it, follow the
+            <a
+                href="https://github.com/caarlos1/course--flappy-bird-clone"
+                target="_blank"
+                >link in my repository.</a
+            >
+        </div>
+    </body>
 </html>
