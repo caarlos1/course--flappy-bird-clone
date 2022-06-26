@@ -5,6 +5,14 @@ import PlayScene from "./scenes/PlayScene";
 import ScoreScene from "./scenes/ScoreScene";
 import PauseScene from "./scenes/PauseScene";
 
+const lastUpdate = localStorage.getItem("lastUpdate");
+const actualUpdate = 1;
+
+if (!lastUpdate || (lastUpdate && parseInt(lastUpdate) < actualUpdate)) {
+    localStorage.setItem("lastUpdate", actualUpdate);
+    localStorage.removeItem("bestScore");
+}
+
 const WIDTH = window.innerWidth <= 400 ? window.innerWidth - 30 : 350;
 const HEIGHT = window.innerHeight <= 600 ? window.innerHeight - 30 : 600;
 const PIPES_TO_RENDER = 4;
